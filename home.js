@@ -1,4 +1,5 @@
-document.getElementById("home").addEventListener("click", function() {
+// go to home
+document.getElementById("logo").addEventListener("click", function() {
     window.location.href = "home.html";
 });
 // toggle colors
@@ -10,7 +11,11 @@ color_toggle.addEventListener('click', function() {
         document.documentElement.style.setProperty('--secondary-color', 'white');
     } else {
         color_toggle.textContent = 'wb_sunny';
-        document.documentElement.style.setProperty('--primary-color', 'gray');
+        document.documentElement.style.setProperty('--primary-color', 'white');
         document.documentElement.style.setProperty('--secondary-color', 'black');
     }
+});
+// go to discord
+document.getElementById("discord").addEventListener("click", function() {
+    window.open("https://discord.gg/mAg7G7haJd", "_blank");
 });

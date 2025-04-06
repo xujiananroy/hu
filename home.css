@@ -5,12 +5,13 @@
 html{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+    font-family: "Inter", sans-serif;
 } /* root settings */
 body{
     margin: 0;
 } /* body settings */
 span.material-icons{
-    font-size: 30px !important;
+    font-size: 25px !important;
     cursor: pointer !important;
 } /* icon settings */
 a{
@@ -23,12 +24,16 @@ header{
     align-items: center; /* Vertically center items */
     background-color: var(--primary-color);
     margin: 0;
-    padding: 10px 20px; /* Add padding around the header */
+    padding: 10px 15px; /* Add padding around the header */
     color: var(--secondary-color);
-    font-size: 30px !important;
-}
-#home {
-    font-weight: bold;
+    font-size: 25px !important;
+    position: sticky;
+    top: 0;
+} 
+.logos{
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 header a{
     background-color: var(--primary-color);
@@ -36,8 +41,38 @@ header a{
 }
 #page-selector{
     display: flex; /* To arrange links side by side */
-    gap: 15px; /* Space between links */
+    gap: 40px; /* Space between links */
 }
 #page-selector a{
-    color: var(--secondary-color); /* Link color */
+    color: var(--secondary-color);
+} /* Link color */
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+} /* footer color */
+#footer{
+    position: static;
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically center items */
+    margin: 0;
+    padding: 10px 10% 0px 10%; /* Add padding around the header */
+    font-size: 15px !important;
+}
+footer h1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+}
+p#footer{
+    margin: 10px;
+}
+#discord{
+    width: 50px;
+    padding: 20px;
+}
+#copyright{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10 auto 0 auto;
 }
