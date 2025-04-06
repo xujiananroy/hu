@@ -1,0 +1,43 @@
+:root {
+    --secondary-color: white;
+    --primary-color: black;
+} /* set variables */
+html{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+} /* root settings */
+body{
+    margin: 0;
+} /* body settings */
+span.material-icons{
+    font-size: 30px !important;
+    cursor: pointer !important;
+} /* icon settings */
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+} /* links into buttons */
+header{
+    display: flex;
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically center items */
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 10px 20px; /* Add padding around the header */
+    color: var(--secondary-color);
+    font-size: 30px !important;
+}
+#home {
+    font-weight: bold;
+}
+header a{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+#page-selector{
+    display: flex; /* To arrange links side by side */
+    gap: 15px; /* Space between links */
+}
+#page-selector a{
+    color: var(--secondary-color); /* Link color */
+}
